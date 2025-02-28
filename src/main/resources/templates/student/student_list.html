@@ -20,12 +20,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr th:each="student, stat : ${students}">
-                <td th:text="${student.studentNo}">1</td>
-                <td th:text="${student.name}">홍길동</td>
-                <td th:text="${student.phone}">010-1111-1111</td>
-                <td th:text="${student.gender}">남자</td>
-                <td th:text="${student.address}">서울시 강남구</td>
+            <tr th:each="s, stat : ${students}">
+                <td th:text="${s.studentNo}">1</td>
+                <td th:text="${s.name}">홍길동</td>
+                <td th:text="${s.phone}">010-1111-1111</td>
+                <td th:text="${s.gender}">남자</td>
+                <td th:text="${s.address}">서울시 강남구</td>
             </tr>
         </tbody>
     </table>
